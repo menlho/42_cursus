@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 02:51:56 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 02:52:26 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,9 @@ NAME = libft
 FLAGS = -c -o $(NAME) -Wall -Wextra -Werror
 COMP = gcc $(FLAGS) $(HEADERS) $(SRC)
 
+
+
+errg
 all :
 	@echo "Compiling ..."
 	$(COMP)
