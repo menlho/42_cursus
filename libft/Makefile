@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 02:52:53 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 02:54:00 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,4 +32,3 @@ fclean : clean
 
 re : fclean all
 	@echo "(remake)\n"
-
