@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/03/08 06:35:10 by momascle         ###   ########.fr       */
+/*   Created: 2023/03/08 06:29:27 by momascle          #+#    #+#             */
+/*   Updated: 2023/03/08 06:36:34 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define	LIBFT_H
-#include <stddef.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s);
-int	ft_isalpha(int c);
-
-#endif
+int	ft_isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return(0);
+}
