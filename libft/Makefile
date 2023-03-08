@@ -6,25 +6,30 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 02:16:17 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 02:48:33 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#ifndef	LIBFT_H
-#define	LIBFT_H
-
 OBJ = *.o
-SRC = *.c
+HEADERS = *.h
+SRC = ft_*.c
 NAME = libft
-FLAGS = -o $(NAME) -Wall -Wextra -Werror
-COMP = gcc $(FLAGS) $(SRC)
+FLAGS = -c -o $(NAME) -Wall -Wextra -Werror
+COMP = gcc $(FLAGS) $(SRC) $(HEADERS)
 
 all :
-
+	@echo "Compiling ..."
+	$(COMP)
+	ar -crs $(NAME).a $(OBJ)
+	@echo "Compilation OK ! Library successfully created.\n"
 clean :
+	rm -rf $(OBJ)
+	@echo ".o files removed\n"
 
-fclean :
+fclean : clean
+	rm -rf $(NAME).a
+	@echo ".a files removed\n"
 
-re :
+re : fclean all
+	@echo "(remake)\n"
 
-#endif
