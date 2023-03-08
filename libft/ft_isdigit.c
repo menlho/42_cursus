@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/03/08 06:50:19 by momascle         ###   ########.fr       */
+/*   Created: 2023/03/08 06:39:00 by momascle          #+#    #+#             */
+/*   Updated: 2023/03/08 06:39:36 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define	LIBFT_H
-#include <stddef.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return(0);
+}
