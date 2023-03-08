@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 03:30:30 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 04:05:40 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ clean :
 
 fclean : clean
 	rm -rf $(NAME).a
-	@echo ".a and .h files removed\n"
+	@echo ".a and removed\n"
 
 re : fclean all
 	@echo "(remake)\n"
