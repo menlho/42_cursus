@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 02:54:00 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 03:11:20 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ OBJ = *.o
 HEADERS = *.h
 SRC = ft_*.c
 NAME = libft
-FLAGS = -c -o $(NAME) -Wall -Wextra -Werror
+FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc $(FLAGS) $(HEADERS) $(SRC)
 
 all :
