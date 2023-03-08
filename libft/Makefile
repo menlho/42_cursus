@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/03/08 04:05:40 by momascle         ###   ########.fr        #
+#    Updated: 2023/03/08 05:15:21 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,11 @@ HEADERS = *.h
 SRC = ft_*.c
 NAME = libft
 FLAGS = -c -Wall -Wextra -Werror
-COMP = gcc $(FLAGS) $(SRC)
+COMP = gcc
 
 all :
 	@echo "Compiling ..."
-	$(COMP)
+	$(COMP) $(FLAGS) $(SRC)
 	ar -rcs $(NAME).a $(OBJ)
 	@echo "Compilation OK ! Library successfully created.\n"
 clean :
