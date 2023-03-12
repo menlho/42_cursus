@@ -24,12 +24,27 @@ int main()
             %c : %d\n \
             %c : %d\n \
             %c : %d\n \
-            %c : %d ", a1 , ft_isalnum(a1), \
+            %c : %d\n", a1 , ft_isalnum(a1), \
                         a2, ft_isalnum(a2), \
                         a3, ft_isalnum(a3), \
                         a4, ft_isalnum(a4), \
                         a5, ft_isalnum(a5), \
                         a6, ft_isalnum(a6), \
                         a7, ft_isalnum(a7));
+    printf("\n \
+            isalpha\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n", a1 , ft_isalpha(a1), \
+                        a2, ft_isalpha(a2), \
+                        a3, ft_isalpha(a3), \
+                        a4, ft_isalpha(a4), \
+                        a5, ft_isalpha(a5), \
+                        a6, ft_isalpha(a6), \
+                        a7, ft_isalpha(a7));
     return (0);
 }
