@@ -12,15 +12,15 @@
 
 OBJ = *.o
 HEADERS = *.h
-SRC = ft_*.c
-NAME = libft
+SRC = ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_strlen.c
+NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc
 
 all :
 	@echo "Compiling ..."
 	$(COMP) $(FLAGS) $(SRC)
-	ar -rcs $(NAME).a $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 	@echo "Compilation OK ! Library successfully created.\n"
 clean :
 	rm -rf $(OBJ)
