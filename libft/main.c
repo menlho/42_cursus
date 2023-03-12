@@ -46,5 +46,25 @@ int main()
                         a5, ft_isalpha(a5), \
                         a6, ft_isalpha(a6), \
                         a7, ft_isalpha(a7));
+    printf("\n \
+            isdigit\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n", a1 , ft_isdigit(a1), \
+                        a2, ft_isdigit(a2), \
+                        a3, ft_isdigit(a3), \
+                        a4, ft_isdigit(a4), \
+                        a5, ft_isdigit(a5), \
+                        a6, ft_isdigit(a6), \
+                        a7, ft_isdigit(a7));
+    printf("\n \
+            strlen\n \
+            len(%s) : %lu\n \
+            len(%s): %lu\n", str1, ft_strlen(str1), \
+                            str2, ft_strlen(str2));
     return (0);
 }
