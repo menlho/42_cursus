@@ -1,0 +1,35 @@
+#include "libft.h"
+#include <stdio.h>
+
+int main()
+{
+    char    a1 = 'a';
+    char    a2 = 'z';
+    char    a3 = '0';
+    char    a4 = '9';
+    char    a5 = 'A';
+    char    a6 = 'Z';
+    char    a7 = '{';
+    char    a8 = 13;
+
+    char    *str1 = "Hello all";
+    char    *str2 = "";
+    
+    printf(" \
+            ------TESTS LIBFT------ \n \
+            isalnum\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d ", a1 , ft_isalnum(a1), \
+                        a2, ft_isalnum(a2), \
+                        a3, ft_isalnum(a3), \
+                        a4, ft_isalnum(a4), \
+                        a5, ft_isalnum(a5), \
+                        a6, ft_isalnum(a6), \
+                        a7, ft_isalnum(a7));
+    return (0);
+}
