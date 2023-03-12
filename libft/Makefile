@@ -11,7 +11,6 @@
 # **************************************************************************** #
 
 OBJ = ft_isalnum.o ft_isalpha.o ft_isdigit.o ft_strlen.o
-HEADERS = *.h
 SRC = ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_strlen.c
 NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
