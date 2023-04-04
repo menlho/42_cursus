@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/04/04 21:06:03 by momascle         ###   ########.fr       */
+/*   Created: 2023/04/04 21:00:13 by momascle          #+#    #+#             */
+/*   Updated: 2023/04/04 21:15:42 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define	LIBFT_H
-#include <stddef.h>
+int	ft_atoi(const char *s)
+{
+	int	i;
+	int	res;
+	int	sign;
 
-size_t	ft_strlen(const char *s);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-int	ft_toupper(int c);
-int	ft_tolower(int c);
-int	ft_atoi(const char* s);
-
-#endif
+	i = 0;
+	res = 0;
+	sign = 1;
+	while ((s[i] == ' ') || (s[i] >= 9 && s[i] <= 13))
+		i++;
+	if (s[i] == '+' || s[i] == '-')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		res = res * 10 + (s[i] - 48);
+		i++;
+	}
+	return (res * sign);
+}
