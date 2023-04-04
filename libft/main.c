@@ -14,7 +14,7 @@ int main()
 
     char    *str1 = "Hello all";
     char    *str2 = "";
-    
+
     printf(" \
             ------TESTS LIBFT------ \n \
             isalnum\n \
@@ -61,6 +61,22 @@ int main()
                         a5, ft_isdigit(a5), \
                         a6, ft_isdigit(a6), \
                         a7, ft_isdigit(a7));
+	printf("\n \
+            isascii\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n", a1 , ft_isascii(a1), \
+                        a2, ft_isascii(a2), \
+                        a3, ft_isascii(a3), \
+                        a4, ft_isascii(a4), \
+                        a5, ft_isascii(a5), \
+                        a6, ft_isascii(a6), \
+                        a7, ft_isascii(a7));
+
     printf("\n \
             strlen\n \
             len(%s) : %lu\n \
