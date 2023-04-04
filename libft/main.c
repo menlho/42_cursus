@@ -76,6 +76,21 @@ int main()
                         a5, ft_isascii(a5), \
                         a6, ft_isascii(a6), \
                         a7, ft_isascii(a7));
+	printf("\n \
+            isprint\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n \
+            %c : %d\n", a1 , ft_isprint(a1), \
+                        a2, ft_isprint(a2), \
+                        a3, ft_isprint(a3), \
+                        a4, ft_isprint(a4), \
+                        a5, ft_isprint(a5), \
+                        a6, ft_isprint(a6), \
+                        a7, ft_isprint(a7));
 
     printf("\n \
             strlen\n \

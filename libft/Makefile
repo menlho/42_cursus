@@ -6,12 +6,14 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/04/04 20:30:12 by momascle         ###   ########.fr        #
+#    Updated: 2023/04/04 20:43:30 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-OBJ = 	ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_strlen.o
-SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c
+OBJ = 	ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_strlen.o \
+		ft_isprint.o
+SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c \
+		ft_isprint.c
 NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc
