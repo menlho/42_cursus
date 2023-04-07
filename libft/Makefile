@@ -6,16 +6,16 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/04/07 18:39:52 by momascle         ###   ########.fr        #
+#    Updated: 2023/04/07 19:02:04 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 OBJ = 	ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_strlen.o \
 		ft_isprint.o ft_toupper.o ft_tolower.o ft_atoi.o \
-		ft_memset.o  ft_bzero.o
+		ft_memset.o  ft_bzero.o ft_memcpy.o
 SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c \
 		ft_isprint.c ft_toupper.c ft_tolower.c ft_atoi.c \
-		ft_memset.c ft_bzero.c
+		ft_memset.c ft_bzero.c ft_memcpy.c
 NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc
