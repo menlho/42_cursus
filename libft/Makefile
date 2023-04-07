@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/04/04 22:23:35 by momascle         ###   ########.fr        #
+#    Updated: 2023/04/07 18:39:52 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ clean :
 	@echo ".o files removed\n"
 
 fclean : clean
-	rm -rf $(NAME).a
+	rm -rf $(NAME)
 	@echo ".a and removed\n"
 
 re : fclean all
