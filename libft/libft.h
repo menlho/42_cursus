@@ -6,7 +6,7 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/04/09 20:19:33 by momascle         ###   ########.fr       */
+/*   Updated: 2023/04/09 21:59:04 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	*ft_strrchr(const char *s, int c);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 
 #endif
