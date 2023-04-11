@@ -6,13 +6,14 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/04/11 17:45:03 by momascle         ###   ########.fr       */
+/*   Updated: 2023/04/11 20:57:18 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 #include <stddef.h>
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -35,5 +36,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
