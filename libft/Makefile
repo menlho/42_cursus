@@ -26,6 +26,10 @@ NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc
 
+so:
+	$(COMP) -nostartfiles -fPIC $(FLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
+
 all :
 	@echo "Compiling ..."
 	$(COMP) $(FLAGS) $(SRC)

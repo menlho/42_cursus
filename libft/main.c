@@ -97,5 +97,9 @@ int main()
             len(%s) : %lu\n \
             len(%s): %lu\n", str1, ft_strlen(str1), \
                             str2, ft_strlen(str2));
+
+	char test[0xF] = "nyan !";
+	char test2[0xF] = "nyan !";
+	printf("strlcat void bugged : %ld", ft_strlcat((void *)0, test, 0));
     return (0);
 }
