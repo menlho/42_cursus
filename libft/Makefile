@@ -28,7 +28,7 @@ COMP = gcc
 
 so:
 	$(COMP) -nostartfiles -fPIC $(FLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.a $(OBJ)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 all :
 	@echo "Compiling ..."
@@ -41,7 +41,8 @@ clean :
 
 fclean : clean
 	rm -rf $(NAME)
-	@echo ".a and removed\n"
+	rm -rf libft.so
+	@echo ".a and .so removed\n"
 
 re : fclean all
 	@echo "(remake)\n"
