@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/06/10 21:33:07 by momascle         ###   ########.fr        #
+#    Updated: 2023/06/11 01:19:11 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c \
 		ft_putendl_fd.c ft_putnbr_fd.c ft_substr.c ft_strjoin.c \
 		ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c
 BONUS_SRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize.c \
-			ft_lstlast_bonus.c
+			ft_lstlast_bonus.c ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c ft_lstclear_bonus.c
 FILES = $(SRC:.c=.o)
 BONUS_FILES = $(BONUS_SRC:.c=.o)
 COMP = gcc
