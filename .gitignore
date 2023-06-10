@@ -6,3 +6,4 @@
 *.gch
 *.out
 *.so
+main.c
