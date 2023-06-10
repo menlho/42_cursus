@@ -6,7 +6,7 @@
 #    By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 21:39:00 by momascle          #+#    #+#              #
-#    Updated: 2023/06/09 10:20:11 by momascle         ###   ########.fr        #
+#    Updated: 2023/06/10 07:50:32 by momascle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ OBJ = 	ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_strlen.o \
 		ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o \
 		ft_calloc.o ft_strdup.o ft_putchar_fd.o ft_putstr_fd.o \
 		ft_putendl_fd.o ft_putnbr_fd.o ft_substr.o ft_strjoin.o \
-		ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o
+		ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o \
+		ft_striteri.o
 SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c \
 		ft_isprint.c ft_toupper.c ft_tolower.c ft_atoi.c \
 		ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -25,7 +26,7 @@ SRC = 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_strlen.c \
 		ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 		ft_calloc.c ft_strdup.c ft_putchar_fd.c ft_putstr_fd.c \
 		ft_putendl_fd.c ft_putnbr_fd.c ft_substr.c ft_strjoin.c \
-		ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c
+		ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c
 NAME = libft.a
 FLAGS = -c -Wall -Wextra -Werror
 COMP = gcc
