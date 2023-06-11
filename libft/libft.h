@@ -6,14 +6,13 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/11 06:23:06 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 07:09:15 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
-# include <stdlib.h>
 # include <unistd.h>
 # include <stdlib.h>
 

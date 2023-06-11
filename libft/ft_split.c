@@ -6,12 +6,11 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 09:07:56 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/09 09:39:15 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:48:26 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	sep_count(const char *s, char c)
 {

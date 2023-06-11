@@ -6,11 +6,10 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 06:08:00 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/11 06:20:49 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:50:45 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static int	isinset(const char *set, char c)
