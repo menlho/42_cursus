@@ -6,18 +6,18 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 03:02:27 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/11 02:49:01 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:23:06 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdlib.h>
+# define LIBFT_H
+# include <stddef.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdlib.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;

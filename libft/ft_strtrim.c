@@ -6,14 +6,14 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 06:08:00 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/06 11:13:34 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:20:49 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-static int isinset(const char *set, char c)
+static int	isinset(const char *set, char c)
 {
 	int		i;
 
@@ -25,11 +25,12 @@ static int isinset(const char *set, char c)
 	}
 	return (0);
 }
-char	*ft_strtrim(const char *s1,const char *set)
+
+char	*ft_strtrim(const char *s1, const char *set)
 {
-	int	i;
-	int	start;
-	int	end;
+	int		i;
+	int		start;
+	int		end;
 	char	*trimmed;
 
 	if (!s1)
@@ -40,20 +41,9 @@ char	*ft_strtrim(const char *s1,const char *set)
 	start = i;
 	end = ft_strlen(s1);
 	if (end < 0)
-		return(ft_strdup(""));
+		return (ft_strdup(""));
 	while (s1[end - 1] && isinset(set, s1[end - 1]))
 		end--;
 	trimmed = ft_substr(s1, start, end - start);
 	return (trimmed);
-
 }
-
-/*int main()
-{
-	printf(" %d abc a \n", isinset("abc", 'a'));
-	printf(" %d abc d \n", isinset("abc", 'd'));
-	char *s1 = "   bonjour    ";
-	char *s2;
-	s2 = ft_strtrim(s1, " ");
-	printf("og: %s\n trimmed: %s\n", s1, s2);
-}*/

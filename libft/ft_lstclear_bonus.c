@@ -6,13 +6,13 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 01:07:32 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/11 02:01:17 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:11:31 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*buff;
 

@@ -6,7 +6,7 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:13:48 by momascle          #+#    #+#             */
-/*   Updated: 2023/04/11 19:01:52 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:31:27 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,28 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned int	a;
-	unsigned int	b;
-	unsigned int	c;
+	unsigned int	i;
+	unsigned int	i2;
 
-	a = 0;
-	b = 0;
-	if (!(needle[a]))
-		return ((char *) haystack);
-	if (!(haystack) && (len == 0))
+	i = 0;
+	i2 = 0;
+	if (!(needle[i2]))
+		return ((char *)haystack);
+	if (len == 0)
 		return (0);
-	while (haystack[a] != '\0' && a < len)
+	while (haystack[i] && (i < len) && (needle[i2]
+			|| (haystack[i] == needle[i2])))
 	{
-		if (haystack[a] == needle[b])
+		if (haystack[i] == needle[i2])
 		{
-			c = a;
-			while ((haystack[c] == needle[b]) && needle[b] && (c < len))
-			{
-				b++;
-				c++;
-			}
-			if (needle [b] == '\0')
-				return ((char *) haystack + a);
-			b = 0;
+			while (needle[i2] && (needle[i2] == haystack[i + i2])
+				&& ((i + i2) < len))
+				i2++;
+			if (needle[i2] == '\0')
+				return ((char *)&haystack[i]);
+			i2 = 0;
 		}
-		a++;
+		i++;
 	}
-	return (0);
+	return (NULL);
 }

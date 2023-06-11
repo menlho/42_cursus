@@ -6,7 +6,7 @@
 /*   By: momascle <momascle@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/10 19:24:01 by momascle          #+#    #+#             */
-/*   Updated: 2023/06/10 19:37:39 by momascle         ###   ########.fr       */
+/*   Updated: 2023/06/11 06:16:38 by momascle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *buff;
+	t_list	*buff;
 
 	buff = malloc(sizeof(t_list));
 	if (!buff)
